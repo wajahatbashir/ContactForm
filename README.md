@@ -39,10 +39,10 @@ bin/magento cache:clean
 
 ## Usage
 
-**Frontend**
+**Frontend:**
 The contact form is accessible at the /contact-us URL of your Magento store. Users can fill out the form and submit their inquiries.
 
-**Admin**
+**Admin:**
 1.  Log in to the Magento admin panel.
 2.  Go to Content > Contact Form Enquiries.
 3.  View and manage all submitted contact form inquiries.
