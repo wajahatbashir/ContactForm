@@ -52,5 +52,9 @@ The module includes a customizable email template for contact form submissions. 
 
 > view/frontend/email/contact_form_email_template.html
 
+## License
+
+This module is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
