@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="wb_contactform">
+        <column xsi:type="int" name="contact_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Contact ID"/>
+        <column xsi:type="varchar" name="first_name" nullable="false" length="255" comment="First Name"/>
+        <column xsi:type="varchar" name="last_name" nullable="false" length="255" comment="Last Name"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Email"/>
+        <column xsi:type="varchar" name="phone" nullable="false" length="255" comment="Phone"/>
+        <column xsi:type="varchar" name="subject" nullable="false" length="255" comment="Subject"/>
+        <column xsi:type="varchar" name="city" nullable="false" length="255" comment="City"/>
+        <column xsi:type="varchar" name="state" nullable="false" length="255" comment="State"/>
+        <column xsi:type="varchar" name="country" nullable="false" length="255" comment="Country"/>
+        <column xsi:type="text" name="message" nullable="false" comment="Message"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="contact_id"/>
+        </constraint>
+    </table>
+</schema>

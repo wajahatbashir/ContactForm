@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/ui_configuration.xsd">
+    <argument name="dataProvider" xsi:type="configurableObject">
+        <argument name="class" xsi:type="string">WB\ContactForm\Ui\Component\Listing\DataProvider</argument>
+        <argument name="name" xsi:type="string">contactform_listing_data_source</argument>
+    </argument>
+    <dataSource name="contactform_listing_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">WB\ContactForm\Ui\Component\Listing\DataProvider</argument>
+            <argument name="name" xsi:type="string">contactform_listing_data_source</argument>
+        </argument>
+        <settings>
+            <submitUrl path="mui/index/render"/>
+        </settings>
+    </dataSource>
+    <columns name="contactform_listing_columns">
+        <selectionsColumn name="ids">
+            <settings>
+                <indexField>contact_id</indexField>
+            </settings>
+        </selectionsColumn>
+        <column name="contact_id">
+            <settings>
+                <filter>text</filter>
+                <sorting>asc</sorting>
+                <label translate="true">ID</label>
+            </settings>
+        </column>
+        <column name="first_name">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">First Name</label>
+            </settings>
+        </column>
+        <column name="last_name">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Last Name</label>
+            </settings>
+        </column>
+        <column name="email">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Email</label>
+            </settings>
+        </column>
+        <column name="phone">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Phone</label>
+            </settings>
+        </column>
+        <column name="subject">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Subject</label>
+            </settings>
+        </column>
+        <column name="city">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">City</label>
+            </settings>
+        </column>
+        <column name="state">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">State</label>
+            </settings>
+        </column>
+        <column name="country">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Country</label>
+            </settings>
+        </column>
+        <column name="message">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Message</label>
+            </settings>
+        </column>
+        <actionsColumn name="actions">
+            <settings>
+                <indexField>contact_id</indexField>
+            </settings>
+        </actionsColumn>
+    </columns>
+    <listingToolbar name="listing_top">
+        <paging name="listing_paging"/>
+    </listingToolbar>
+</listing>

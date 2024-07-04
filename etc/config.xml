@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+    <default>
+        <wb_contactform>
+            <general>
+                <enabled>1</enabled>
+                <email></email>
+            </general>
+        </wb_contactform>
+    </default>
+</config>

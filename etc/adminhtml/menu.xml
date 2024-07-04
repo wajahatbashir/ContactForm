@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework/Menu/etc/menu.xsd">
+    <menu>
+        <add id="WB_ContactForm::contactform" title="Contact Form" translate="title" module="WB_ContactForm" sortOrder="100" parent="Magento_Backend::content"/>
+        <add id="WB_ContactForm::contactform_manage" title="Manage Contact Form" translate="title" module="WB_ContactForm" sortOrder="10" parent="WB_ContactForm::contactform" action="contactform/index/index"/>
+    </menu>
+</config>
